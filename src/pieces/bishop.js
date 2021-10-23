@@ -1,9 +1,14 @@
 import Piece from './piece.js';
 import { isSameDiagonal, isPathClean } from '../helpers'
+import WhiteBishop from '../images/Chess_blt45.svg'
 
 export default class Bishop extends Piece {
   constructor(player) {
-    super(player, (player === 1 ? "https://upload.wikimedia.org/wikipedia/commons/b/b1/Chess_blt45.svg" : "https://upload.wikimedia.org/wikipedia/commons/9/98/Chess_bdt45.svg"));
+    //super(player, (player === 1 ? "https://upload.wikimedia.org/wikipedia/commons/b/b1/Chess_blt45.svg" : "https://upload.wikimedia.org/wikipedia/commons/9/98/Chess_bdt45.svg"));
+    super(player, (player === 1 ? "WhiteBishop" : "BlackBishop"));
+    //this.state = {
+    //  backgroundImage: `url(${WhiteBishop})`
+    //}
   }
 
   isMovePossible(src, dest, squares) {
