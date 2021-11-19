@@ -1,6 +1,5 @@
 import Piece from './piece.js';
 import { isSameDiagonal, isPathClean } from '../helpers'
-import WhiteBishop from '../images/Chess_blt45.svg'
 
 export default class Bishop extends Piece {
   constructor(player) {
